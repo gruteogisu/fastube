@@ -129,6 +129,8 @@ STATICFILES_DIRS = [
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(PROJECT_ROOT_DIR, "dist", "static")
+
 
 # Auth
 AUTH_USER_MODEL = "users.User"
