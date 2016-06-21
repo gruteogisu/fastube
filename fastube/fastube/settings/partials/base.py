@@ -21,7 +21,7 @@ PROJECT_ROOT_DIR = os.path.dirname(BASE_DIR)
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '@e!c_mrh!6nt=f!l#=xw3vr^#_ke8j=en$y(#_*rfk0i)dc=$*'
+SECRET_KEY = '3k2@ptbklxl%01sw9$9roo_9r3m6di^m_3vyc+-c2updw(jac_'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -159,3 +159,7 @@ PIPELINE = {
 AUTH_USER_MODEL = "users.User"
 
 LOGIN_URL = "/login/"
+
+SIGNUP_SUCCESS_MESSAGE = "성공적으로 회원가입 되었습니다"
+LOGIN_SUCCESS_MESSAGE = "성공적으로 로그인 되었습니다"
+LOGOUT_SUCCESS_MESSAGE = "성공적으로 로그아웃 되었습니다"
