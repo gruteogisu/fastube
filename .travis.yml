@@ -6,5 +6,6 @@ install:
     - pip install -r requirements/development.txt
 script:
     - pep8 .
+    - python fastube/manage.py test users posts
 notifications:
   slack: gruteogisu:zukA6UduCWPCpn0JaRnXm300
