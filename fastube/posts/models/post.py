@@ -7,6 +7,12 @@ class Post(models.Model):
 
     user = models.ForeignKey(User)
 
+    hash_id = models.CharField(
+        max_length=8,
+        blank=True,
+        null=True,
+    )
+
     video_id = models.CharField(
         max_length=16,
     )
