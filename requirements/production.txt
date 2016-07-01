@@ -6,3 +6,6 @@ Pillow
 requests
 beautifulsoup4
 djangorestframework
+celery[redis]
+redis
+flower
