@@ -41,9 +41,11 @@ INSTALLED_APPS = [
 
     'pipeline',
     'social.apps.django_app.default',
+    'rest_framework',
 
     'users',
     'posts',
+    'tags',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -155,6 +157,15 @@ PIPELINE = {
               'css/partials/*.css',
             ),
             'output_filename': 'css/fastube.css',
+        }
+    },
+
+    'JAVASCRIPT': {
+        'posts': {
+            'source_filenames': (
+              'js/posts.js',
+            ),
+            'output_filename': 'js/posts.js',
         }
     }
 }
